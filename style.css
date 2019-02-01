@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* 
+Theme Name: blog-promo-theme
+Theme URL: https://
+Description: Site officiel de la promo Café Inline apprenants à l'ACS Besançon.
+Version: 1.0
+Authors: Christian Anis, Ghislain Billard, Remy Marie-Ange
+
+*/
+@font-face {
+  font-family: "freight";
+  src: url("fonts/Freight_Sans_Black_SC.otf");
+}
+@font-face {
+  font-family: "openlight";
+  src: url("fonts/OpenSans_CondLight.ttf");
+}
+@font-face {
+  font-family: "openbold";
+  src: url("fonts/OpenSans_CondBold.ttf");
+}
+body {
+  font-family: "openlight";
+  color: #474747;
+}
+body header {
+  background-color: white;
+  height: 90px;
+}
+body header .container .row {
+  align-items: center;
+}
+body header .container .row #navbar {
+  width: 100%;
+}
+body header .container .row #navbar img {
+  height: 70px;
+}
+body header .container .row #navbar button {
+  background-color: #efefef;
+}
+body header .container .row #menu ul {
+  display: flex;
+  margin: auto;
+}
+body header .container .row #menu ul li {
+  color: #474747;
+  font-family: "freight";
+  list-style: none;
+}
+body header .container .row #menu ul li a {
+  text-decoration: none;
+  color: #474747;
+  border: solid 2px transparent;
+  padding: 5px;
+  margin: 0px 10px;
+}
+body header .container .row #menu ul li a:hover {
+  border: solid 2px #B50900;
+  color: #B50900;
+}
+body #banTitre {
+  text-align: center;
+  background-color: #efefef;
+  background-image: url(images/banTitre.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  font-size: 2rem;
+}
+body #banTitre h1 {
+  font-family: "freight";
+  font-size: 52px;
+  color: #B50900;
+}
+body #article .articleTop {
+  padding: 30px 0px;
+}
+body #article .articleTop .articleAuteur {
+  font-size: 26px;
+  font-family: "openbold";
+  font-weight: bold;
+}
+body #article .articleTop .articleAuteur a {
+  color: #B50900;
+}
+body #article .articleTop .articleAuteur a:hover {
+  text-decoration: none;
+}
+body #article .articleTop .articleDate {
+  font-size: 20px;
+  font-family: "openbold";
+  font-weight: bold;
+  text-align: right;
+}
+body #article .articleTop #post .post-thumbnails {
+  margin-top: 20px;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+}
+body #article .articleTop #post .articleTexte {
+  font-family: "openlight";
+  font-size: 16px;
+  padding: 20px 0px;
+}
+body #commentaires hr {
+  height: 4px;
+  background-color: #B50900;
+}
+body #commentaires h2 {
+  font-family: "freight";
+  font-size: 38px;
+  color: #B50900;
+}
+body #commentaires p {
+  font-family: "openlight";
+  font-size: 14px;
+}
+body footer {
+  height: 80px;
+  background-color: #B50900;
+  color: white;
+  padding: 5px;
+  line-height: 35px;
+}
+body footer .fa {
+  font-size: 2em;
+  padding-right: 5px;
+}
+body footer a {
+  color: white;
+}
+body footer a:hover {
+  text-decoration: none;
+  color: #474747;
+}
+
+/*# sourceMappingURL=style.css.map */
