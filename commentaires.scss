@@ -1,0 +1,67 @@
+/**
+ * COMMENTAIRES
+ */
+ 
+$primarycolor: white;
+$secondcolor: #B50900;
+$thirdcolor: #efefef;
+$forthcolor: #474747;
+@font-face {
+    font-family: 'freight';
+    src: url('fonts/Freight_Sans_Black_SC.otf');
+}
+
+@font-face {
+    font-family: 'openlight';
+    src: url('fonts/OpenSans_CondLight.ttf');
+}
+
+@font-face {
+    font-family: 'openbold';
+    src: url('fonts/OpenSans_CondBold.ttf');
+}
+
+
+// Liste des commentaires
+#commentaires {
+    hr {
+        height: 4px;
+        background-color: $secondcolor;
+    }
+
+    h2 {
+        font-family: 'freight';
+        font-size: 38px;
+        color: $secondcolor;
+    }
+
+    .comments-area {
+        font-family: 'openbold';
+        font-size: 14px;
+        p {
+            font-family: 'openlight';
+            font-size: 16px;
+        }   
+    }
+
+    .comments-title {
+        border-top: 6px solid $secondcolor;
+        padding-top: 30px;
+    }
+
+    .comment-list {
+        a {
+            font-family: 'openbold';
+            font-size: 14px;
+            text-decoration: none;
+            margin: 0px 2px 0px 0px;
+            color: $secondcolor;
+            &:hover {
+                border: solid 2px $secondcolor;
+                color: $secondcolor;
+            }
+            
+        }
+    }
+
+}

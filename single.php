@@ -54,10 +54,8 @@ get_header(); ?>
 
     <section id="commentaires">
         <div class="container commentaire">
-            <hr> 
-            <h2>Laissez un commentaire</h2>
-
             
+            <?php comments_template(); ?>
         </div>
     </section>
 </main>

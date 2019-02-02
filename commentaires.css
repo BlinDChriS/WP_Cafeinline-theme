@@ -1,0 +1,49 @@
+/**
+ * COMMENTAIRES
+ */
+@font-face {
+  font-family: "freight";
+  src: url("fonts/Freight_Sans_Black_SC.otf");
+}
+@font-face {
+  font-family: "openlight";
+  src: url("fonts/OpenSans_CondLight.ttf");
+}
+@font-face {
+  font-family: "openbold";
+  src: url("fonts/OpenSans_CondBold.ttf");
+}
+#commentaires hr {
+  height: 4px;
+  background-color: #B50900;
+}
+#commentaires h2 {
+  font-family: "freight";
+  font-size: 38px;
+  color: #B50900;
+}
+#commentaires .comments-area {
+  font-family: "openbold";
+  font-size: 14px;
+}
+#commentaires .comments-area p {
+  font-family: "openlight";
+  font-size: 16px;
+}
+#commentaires .comments-title {
+  border-top: 6px solid #B50900;
+  padding-top: 30px;
+}
+#commentaires .comment-list a {
+  font-family: "openbold";
+  font-size: 14px;
+  text-decoration: none;
+  margin: 0px 2px 0px 0px;
+  color: #B50900;
+}
+#commentaires .comment-list a:hover {
+  border: solid 2px #B50900;
+  color: #B50900;
+}
+
+/*# sourceMappingURL=commentaires.css.map */
