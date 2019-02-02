@@ -23,6 +23,9 @@ body {
   font-family: "openlight";
   color: #474747;
 }
+body p {
+  margin-top: 20px;
+}
 body header {
   background-color: white;
   height: 90px;
@@ -112,15 +115,24 @@ body footer {
   line-height: 35px;
 }
 body footer .fa {
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   font-size: 2em;
   padding-right: 5px;
+  color: #efefef;
+}
+body footer .fa:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  color: white;
 }
 body footer a {
   color: white;
 }
 body footer a:hover {
   text-decoration: none;
-  color: #474747;
+  color: white;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

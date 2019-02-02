@@ -50,6 +50,9 @@ $forthcolor: #474747;
     }
 
     .comment-list {
+	list-style: none;
+    margin: 0;
+    
         a {
             font-family: 'openbold';
             font-size: 14px;
@@ -57,11 +60,90 @@ $forthcolor: #474747;
             margin: 0px 2px 0px 0px;
             color: $secondcolor;
             &:hover {
-                border: solid 2px $secondcolor;
-                color: $secondcolor;
+                color: $forthcolor;
             }
-            
         }
+        .children {
+            list-style: none;
+            margin: 0;
+            li {
+                padding-left: 0.875em;
+            }
+        }
+    
     }
 
+    .logged-in-as {
+        a {
+            font-family: 'openlight';
+            font-size: 14px;
+            text-decoration: none;
+            margin: 0px 2px 0px 0px;
+            color: $forthcolor;
+            &:hover {
+                color: $secondcolor;
+            }
+        }
+    }
+    
+    .comment-author {
+        color: #1a1a1a;
+        margin-bottom: 0.4375em;
+
+        .avatar {
+            float: left;
+            height: 28px;
+            margin-right: 0.875em;
+            position: relative;
+            width: 28px;
+        }
+    }
+    .reply {
+        padding-bottom: 40px;
+    }
+    .comment-reply-link {
+        border: 1px solid #d1d1d1;
+        border-radius: 2px;
+        color: #007acc;
+        display: inline-block;
+        font-size: 13px;
+        font-size: 0.8125rem;
+        line-height: 1;
+        margin-top: 2.1538461538em;
+        padding: 0.5384615385em 0.5384615385em 0.4615384615em;
+    }
+
+    #author,#email {
+        display: block;
+        width: 100%;
+        height: 40px;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: bold;
+        background-color: $thirdcolor;
+        background-clip: padding-box;
+        border: 2px solid #aaa;
+        margin-top: -5px;
+        margin-bottom: 5px;
+       
+    }
+
+    #comment {
+        display: block;
+        width: 100%;
+        height: 150px;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        font-weight: bold;
+        background-color: $thirdcolor;
+        background-clip: padding-box;
+        border: 2px solid #aaa;
+        margin-top: -5px;
+        margin-bottom: 5px;
+    }
+
+
 }
+

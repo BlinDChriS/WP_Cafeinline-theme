@@ -13,7 +13,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area">
+<div id="commentaires" class="comments-area">
 
 	<?php if ( have_comments() ) : ?>
 		<h3 class="comments-title">
@@ -58,14 +58,27 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php _e( 'Les commentaires sont fermés.' ); ?></p>
+		<p><?php _e( 'Les commentaires sont fermés.' ); ?></p>
 	<?php endif; ?>
 
 	<?php
-		comment_form( array(
-			'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
-			'title_reply_after'  => '</h2>',
-		) );
-	?>
+        // on génère le formulaire avec du html personnalisé
+        comment_form([
+            'title_reply' => '<h2>Laissez un commentaire</h2>',
+            'fields' => apply_filters('comment_form_default_fields', [
+                'author' => '<label for="author">Nom</label><br>
+                            <input id="author" name="author" type="text" value="" required>',
+
+                'email'  => '<label for="email">Email</label><br>
+                            <input id="email" name="email" type="email" value="" required>'
+            ]),
+
+            'comment_field' => '<label for="comment">commentaire </label><br>
+                                    <textarea id="comment" name="comment"  required></textarea>',
+            'comment_notes_before' => '',
+            'submit_button' => "<button>Envoyer</button>"
+        ]);
+		?>
+
 
 </div><!-- .comments-area -->

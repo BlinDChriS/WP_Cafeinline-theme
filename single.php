@@ -52,9 +52,9 @@ get_header(); ?>
     <?php endif; ?>
     </section>
 
+    <!-- COMMENTAIRES -->
     <section id="commentaires">
-        <div class="container commentaire">
-            
+        <div class="container">
             <?php comments_template(); ?>
         </div>
     </section>

@@ -30,6 +30,10 @@ body {
     font-family: 'openlight';
     color: $forthcolor;
 
+    p {
+        margin-top: 20px;
+    }
+
 
     // NAVBAR
     header {
@@ -144,14 +148,23 @@ body {
         padding: 5px;
         line-height: 35px;
         .fa {
+            -webkit-transition: -webkit-transform .3s ease-in-out;
+                    transition:         transform .3s ease-in-out;
             font-size: 2em;
             padding-right: 5px;
+            color: $thirdcolor;
+            &:hover {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+                color: white;
+            }
         }
         a {
             color: white;
             &:hover {
                 text-decoration: none;
-                color: $forthcolor;
+                color: white;
+                font-weight: bold;
             }
         }
     }
