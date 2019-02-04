@@ -11,9 +11,15 @@ $primarycolor: white;
 $secondcolor: #B50900;
 $thirdcolor: #efefef;
 $forthcolor: #474747;
+
 @font-face {
     font-family: 'freight';
     src: url('fonts/Freight_Sans_Black_SC.otf');
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
@@ -27,7 +33,7 @@ $forthcolor: #474747;
 }
 
 body {
-    font-family: 'openlight';
+    font-family: 'opensans';
     color: $forthcolor;
 
     p {
@@ -99,6 +105,7 @@ body {
     }
 
     #article {
+        
         .articleTop{
             padding: 30px 0px;
 
@@ -127,8 +134,9 @@ body {
                     background-size: cover;
                     background-position: center;
                 }
+                
                 .articleTexte{
-                    font-family: 'openlight';
+                    font-family: 'opensans';
                     font-size: 16px;
                     padding: 20px 0px;
                 }
@@ -137,7 +145,90 @@ body {
 
     }
 
+    #banProjets {
+        text-align: center;
+        background-color: $thirdcolor;
+        background-image: url(images/banProjets.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        font-size: 2rem;
 
+        h1 {
+            font-family: 'freight';
+            font-size: 70px;
+            color: #000;
+        }
+    }
+
+    #projets {
+
+        h2 {
+            font-family: 'freight';
+            font-size: 30px;
+            color: $secondcolor;
+            padding-top: 20px;
+        }
+
+        a {
+            font-family: 'openbold';
+            font-weight: bold;
+            color: $thirdcolor;
+            &:hover {
+                color: $primarycolor;
+                text-decoration: none;
+            }
+        }
+
+        img{   
+        position: relative;
+        height: initial;
+        min-height: 1px;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
+        max-width: 100%;
+        max-height: 100%;
+        -webkit-filter: brightness(0.8);
+        }
+        img:hover {
+            filter: brightness(.3);
+            -webkit-filter: brightness(1.1);
+            -webkit-transition: all ease 0.5s;
+            transition: all ease 0.5s;
+            border-style: solid;
+            border-width: 0px;
+            border-color: $secondcolor;
+            outline: none;
+            border-color: #000000;
+            box-shadow: 0 0 10px #000;
+            
+        }
+
+        .wp-block-gallery.is-cropped .blocks-gallery-item a, figure {
+            height: inherit;
+        }
+
+        
+        .projetTop{
+            padding: 30px 0px;
+            .projetType { 
+                font-size: 26px;
+                font-family: 'openbold';
+                font-weight: bold;
+                a {
+                    color: $secondcolor;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
 
 
     // FOOTER

@@ -1,5 +1,5 @@
 <?php
-/*Template Name: Accueil*/
+/*Template Name: Article*/
 get_header(); ?>
 
 
@@ -19,7 +19,7 @@ get_header(); ?>
     <!-- ARTICLE -->
     <section id="article">
        
-        <div class="container">
+        <div class="container col-md-8">
              <div class="articleTop row">
 
                 <div class="articleAuteur col-md-10">
@@ -54,7 +54,8 @@ get_header(); ?>
 
     <!-- COMMENTAIRES -->
     <section id="commentaires">
-        <div class="container">
+        <div class="container col-md-8">
+            <hr>
             <?php comments_template(); ?>
         </div>
     </section>

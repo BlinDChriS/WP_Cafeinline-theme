@@ -6,9 +6,15 @@ $primarycolor: white;
 $secondcolor: #B50900;
 $thirdcolor: #efefef;
 $forthcolor: #474747;
+
 @font-face {
     font-family: 'freight';
     src: url('fonts/Freight_Sans_Black_SC.otf');
+}
+
+@font-face {
+    font-family: 'opensans';
+    src: url('fonts/OpenSans-Regular.ttf');
 }
 
 @font-face {
@@ -39,13 +45,12 @@ $forthcolor: #474747;
         font-family: 'openbold';
         font-size: 14px;
         p {
-            font-family: 'openlight';
+            font-family: 'opensans';
             font-size: 16px;
         }   
     }
 
     .comments-title {
-        border-top: 6px solid $secondcolor;
         padding-top: 30px;
     }
 
@@ -75,7 +80,7 @@ $forthcolor: #474747;
 
     .logged-in-as {
         a {
-            font-family: 'openlight';
+            font-family: 'opensans';
             font-size: 14px;
             text-decoration: none;
             margin: 0px 2px 0px 0px;

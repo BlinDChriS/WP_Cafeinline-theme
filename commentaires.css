@@ -6,6 +6,10 @@
   src: url("fonts/Freight_Sans_Black_SC.otf");
 }
 @font-face {
+  font-family: "opensans";
+  src: url("fonts/OpenSans-Regular.ttf");
+}
+@font-face {
   font-family: "openlight";
   src: url("fonts/OpenSans_CondLight.ttf");
 }
@@ -27,11 +31,10 @@
   font-size: 14px;
 }
 #commentaires .comments-area p {
-  font-family: "openlight";
+  font-family: "opensans";
   font-size: 16px;
 }
 #commentaires .comments-title {
-  border-top: 6px solid #B50900;
   padding-top: 30px;
 }
 #commentaires .comment-list {
@@ -56,7 +59,7 @@
   padding-left: 0.875em;
 }
 #commentaires .logged-in-as a {
-  font-family: "openlight";
+  font-family: "opensans";
   font-size: 14px;
   text-decoration: none;
   margin: 0px 2px 0px 0px;
