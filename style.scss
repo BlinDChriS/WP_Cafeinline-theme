@@ -186,13 +186,12 @@ body {
         min-height: 1px;
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
-        max-width: 33.333333%;
         -ms-flex-preferred-size: 0;
         flex-basis: 0;
         -ms-flex-positive: 1;
         flex-grow: 1;
-        max-width: 100%;
-        max-height: 100%;
+        width: 20vw;
+        height: 20vw;
         -webkit-filter: brightness(0.8);
         }
         img:hover {
