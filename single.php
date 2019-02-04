@@ -22,11 +22,11 @@ get_header(); ?>
         <div class="container col-md-8">
              <div class="articleTop row">
 
-                <div class="articleAuteur col-md-10">
+                <div class="articleAuteur col-md-8">
                             < Réalisé par <a href="<?php echo get_permalink() ;?>"><?php echo get_the_author(); ?></a> />
                 </div>
 
-                <div class="articleDate col-md-2">
+                <div class="articleDate col-md-4">
                     <?php the_time('j F Y') ?>
                  </div>
                         <!-- l'article -->
