@@ -152,6 +152,7 @@ body #projets img {
   flex-grow: 1;
   width: 20vw;
   height: 20vw;
+  filter: brightness(0.8);
   -webkit-filter: brightness(0.8);
 }
 body #projets img:hover {
